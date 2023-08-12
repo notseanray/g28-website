@@ -10,3 +10,55 @@
 .jost {
 	font-family: 'Jost', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-button:single-button {
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8c8ca9;
+}
+::-webkit-scrollbar-track {
+    background: #575757;
+}
+
+.title {
+    font-size: 9vw;
+}
+.frclabel {
+    font-size: 3vw;
+}
+.mobile-name {
+    font-size: 5vw;
+}
+.text-boxes {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.descriptions {
+    max-width: 45vw;
+}
+@media (max-width: 1200px) {
+    .descriptions {
+        max-width: 90vw;
+    }
+    .text-boxes {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .title {
+        font-size: 8vw;
+    }
+    .frclabel {
+        font-size: 3vw;
+    }
+}
+
+a {
+	color: #B8B8D6;
+}

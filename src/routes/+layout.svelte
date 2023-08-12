@@ -3,28 +3,79 @@
     import { onMount } from "svelte";
     import { Gradient } from "../Gradient";
     // Call `initGradient` with the selector to your canvas
+    import { ismobile } from "../store";
+    import { browser } from '$app/environment';
+    let mobile = false;
+    import { page } from '$app/stores';
+    const MOBILE_WIDTH = 1200;
+    const handleResize = (e: any) => {
+		mobile = window.innerWidth < MOBILE_WIDTH;
+        ismobile.set(mobile);
+	};
+	if (browser) {
+		handleResize(undefined);
+		const debounce = (fn: (e: any) => void, interval: number) => {
+			let timer: any;
+			return function debounced(...args: any) {
+				clearTimeout(timer);
+				timer = setTimeout(function call() {
+					fn(args);
+				}, interval);
+			};
+		};
+		window.addEventListener('resize', debounce(handleResize, 2));
+	}
     onMount(() => {
         const gradient = new Gradient()
 
         // @ts-ignore
         gradient.initGradient("#gradient")
-        })
+	});
 </script>
-<div class="z-50 absolute text-[#ffffff]">
-	<div class="raleway text-4xl m-5 flex">
-		<a href="/" class="mr-12 hover:underline">
-			about
-		</a>
-		<a href="/shop" class="mr-12 hover:underline">
-			our shop
-		</a>
-		<a href="/sponsors" class="mr-12 hover:underline">
-			sponsors
-		</a>
-	</div>
-	<slot />
+<div class="w-screen overflow-hidden">
+<div class="w-full z-50 absolute text-[#ffffff] overflow-hidden">
+    <div class="raleway navtext m-5 flex">
+        {#if $page.url.pathname === '/' ? 'page' : undefined}
+            <a href="/" class="text-slate-[#D7D6D6] mr-12 hover:underline">
+                about
+            </a>
+        {:else}
+            <a href="/" class="text-slate-100 mr-12 hover:underline">
+                about
+            </a>
+        {/if}
+        {#if $page.url.pathname === '/join' ? 'page' : undefined}
+            <a href="/join" class="text-slate-[#D7D6D6] mr-12 hover:underline">
+                join
+            </a>
+        {:else}
+            <a href="/join" class="text-slate-100 mr-12 hover:underline">
+                join
+            </a>
+        {/if}
+        {#if $page.url.pathname === '/shop' ? 'page' : undefined}
+            <a href="/shop" class="text-slate-[#D7D6D6] mr-12 hover:underline">
+                our shop
+            </a>
+        {:else}
+            <a href="/shop" class="text-slate-100 mr-12 hover:underline">
+                our shop
+            </a>
+        {/if}
+        {#if $page.url.pathname === '/sponsors' ? 'page' : undefined}
+            <a href="/sponsors" class="text-slate-[#D7D6D6] mr-12 hover:underline">
+                sponsors
+            </a>
+        {:else}
+            <a href="/sponsors" class="text-slate-100 mr-12 hover:underline">
+                sponsors
+            </a>
+        {/if}
+    </div>
+    <slot />
 </div>
-<canvas id="gradient" class="min-h-full h-full fixed">
+</div>
+<canvas id="gradient" class="w-[100vw] h-[100vh] fixed overflow-hidden">
 </canvas>
 
 <style global>
@@ -38,6 +89,11 @@
 	font-family: 'Jost', sans-serif;
 }
 
+.navtext {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
 #gradient {
   width:100%;
   height:100%;
@@ -45,5 +101,12 @@
   --gradient-color-2: #8c8ca9;
   --gradient-color-3: #363636;
   --gradient-color-4: #575b64;
+}
+
+@media (max-width: 1200px) {
+    .navtext {
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
 }
 </style>
