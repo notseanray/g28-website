@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Raleway:wght@500&display=swap');
+
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+.jost {
+	font-family: 'Jost', sans-serif;
+}
