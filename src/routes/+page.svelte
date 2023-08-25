@@ -13,16 +13,16 @@
 <img class="z-0 absolute -translate-x-[42vw] h-[30vw] rotate-12 w-screen mt-[140vh]" src="/blob_3.svg" alt="" />
 <div class="absolute flex justify-center align-middle text-center w-screen mt-[35vh] z-10">
     <div class="justify-center align-middle text-center">
-        <div class="jost title">
+        <div class="jost title tracking-tight">
             G-28 Robotics
         </div>
-        <div class="jost frclabel float-right mr-2">
+        <div class="raleway frclabel float-right mr-2">
             FRC 202400169
         </div>
     </div>
 </div>
 <div class="mt-[100vh] w-[90vw]" />
-<div class="flex flex-wrap justify-center max-w-fit mx-[3%] z-10">
+<div class="flex flex-wrap justify-center max-w-fit mx-[3%] z-10 jost">
     <div class="flex justify-center text-center mr-2">
         <div>
             <div class="mobile-name uppercase font-extrabold flex ml-2 z-10">
@@ -32,7 +32,7 @@
                 {/if}
             </div>
             <div>
-                <div class="text-boxes m-2 descriptions content-center text-left mt-8">
+                <div class="text-boxes m-2 descriptions content-center text-left mt-8 z-10">
                     The FIRST Robotics Competition is an international high-school competitive robots
                     competition centered around industry-scale robots. Each year a new challenge is
                     released on January 7, and teams have 7 weeks to design and build their robots before
@@ -50,7 +50,7 @@
             <div class="text-boxes m-2 descriptions content-center text-right">
                 "FIRST creates programs where its participants are limited only by the bounds of their
                 imagination and gives them a forum to begin to examine the world’s problems by exploring
-                science, technology, engineering and math.
+                science, technology, engineering and math."
                 <br />
                 - Congressman Jim Langevin (RI)
                 {#if !mobile}
@@ -84,22 +84,22 @@
     </div>
 </div>
 <div class="mt-80" />
-<div class="float-right mr-[3%] mb-[20rem] z-10">
-    <div class="mobile-name font-extrabold flex ml-1">the team</div>
+<div class="float-right mr-[3%] mb-[20rem] jost">
+    <div class="mobile-name font-extrabold flex ml-1 z-10">the team</div>
     <div>
-        <div class="text-boxes m-2 descriptions content-center text-left mt-8">
+        <div class="text-boxes m-2 descriptions content-center text-left mt-8 z-10">
             G28-Robotics, FIRST Robotics Team 202400169, is a community-based FIRST Robotics Competition team based in Atlanta, GA. The team was founded in April of 2023 when the founders of StartProto, Tim Felbinger and Zach Cloud, offered to host a rookie team that was at risk of dissolving at StartProto HQ.
-<br />
-<br />
-The team has a focus on giving students unique, real-world experience with both engineering and manufacturing. Some of our students spent the summer working at manufacturers and software companies. We are planning on competing in the 2024 FIRST Robotics Competition.
-<br />
-<br />
-Want to support our mission? Here’s how you can get involved:
-<br />
-<br />
-Join our Team: <a href="/join" class="hover:underline">Mentors / Students</a>
-<br />
-<a href="/sponsors" class="hover:underline">Become a Sponsor</a>
+            <br />
+            <br />
+            The team has a focus on giving students unique, real-world experience with both engineering and manufacturing. Some of our students spent the summer working at manufacturers and software companies. We are planning on competing in the 2024 FIRST Robotics Competition.
+            <br />
+            <br />
+            Want to support our mission? Here’s how you can get involved:
+            <br />
+            <br />
+            Join our Team: <a href="/join" class="hover:underline">Mentors / Students</a>
+            <br />
+            <a href="/sponsors" class="hover:underline">Become a Sponsor</a>
 
 
         </div>

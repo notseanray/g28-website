@@ -7,7 +7,7 @@
     import { browser } from '$app/environment';
     let mobile = false;
     import { page } from '$app/stores';
-    const MOBILE_WIDTH = 1200;
+    const MOBILE_WIDTH = 800;
     const handleResize = (e: any) => {
 		mobile = window.innerWidth < MOBILE_WIDTH;
         ismobile.set(mobile);
@@ -34,43 +34,50 @@
 </script>
 <div class="w-screen overflow-hidden">
 <div class="w-full z-50 absolute text-[#ffffff] overflow-hidden">
-    <div class="raleway navtext m-5 flex">
-        {#if $page.url.pathname === '/' ? 'page' : undefined}
-            <a href="/" class="text-slate-[#D7D6D6] mr-12 hover:underline">
-                about
-            </a>
-        {:else}
-            <a href="/" class="text-slate-100 mr-12 hover:underline">
-                about
+    <div class="raleway navtext m-2 flex h-40 justify-self-end tracking-tight">
+        {#if !mobile}
+            <a href="/">
+                <img class="h-20" src="/logo.svg" alt="" />
             </a>
         {/if}
-        {#if $page.url.pathname === '/join' ? 'page' : undefined}
-            <a href="/join" class="text-slate-[#D7D6D6] mr-12 hover:underline">
-                join
-            </a>
-        {:else}
-            <a href="/join" class="text-slate-100 mr-12 hover:underline">
-                join
-            </a>
-        {/if}
-        {#if $page.url.pathname === '/shop' ? 'page' : undefined}
-            <a href="/shop" class="text-slate-[#D7D6D6] mr-12 hover:underline">
-                our shop
-            </a>
-        {:else}
-            <a href="/shop" class="text-slate-100 mr-12 hover:underline">
-                our shop
-            </a>
-        {/if}
-        {#if $page.url.pathname === '/sponsors' ? 'page' : undefined}
-            <a href="/sponsors" class="text-slate-[#D7D6D6] mr-12 hover:underline">
-                sponsors
-            </a>
-        {:else}
-            <a href="/sponsors" class="text-slate-100 mr-12 hover:underline">
-                sponsors
-            </a>
-        {/if}
+        <div class="ht-20 p-5">
+            {#if $page.url.pathname === '/' ? 'page' : undefined}
+                <a href="/" class="text-slate-[#D7D6D6] mr-4">
+                    about
+                </a>
+            {:else}
+                <a href="/" class="text-slate-100 mr-4">
+                    about
+                </a>
+            {/if}
+            {#if $page.url.pathname === '/join' ? 'page' : undefined}
+                <a href="/join" class="text-slate-[#D7D6D6] mr-4">
+                    join
+                </a>
+            {:else}
+                <a href="/join" class="text-slate-100 mr-4">
+                    join
+                </a>
+            {/if}
+            {#if $page.url.pathname === '/shop' ? 'page' : undefined}
+                <a href="/shop" class="text-slate-[#D7D6D6] mr-4">
+                    our shop
+                </a>
+            {:else}
+                <a href="/shop" class="text-slate-100 mr-4">
+                    our shop
+                </a>
+            {/if}
+            {#if $page.url.pathname === '/sponsors' ? 'page' : undefined}
+                <a href="/sponsors" class="text-slate-[#D7D6D6] mr-4">
+                    sponsors
+                </a>
+            {:else}
+                <a href="/sponsors" class="text-slate-100 mr-4">
+                    sponsors
+                </a>
+            {/if}
+        </div>
     </div>
     <slot />
 </div>
@@ -103,7 +110,7 @@
   --gradient-color-4: #575b64;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .navtext {
         font-size: 1.2rem;
         line-height: 1rem;

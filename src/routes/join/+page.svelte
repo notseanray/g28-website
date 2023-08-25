@@ -4,7 +4,7 @@
 		Join Our Team
 	</div>
 </main>
-<div class="flex justify-center mt-20">
+<div class="flex justify-center mt-20 jost">
 	<div class="mx-[5%]">
 		<div class="flex flex-wrap justify-center mt-20 text-5xl">
 			Why should you join?
@@ -12,16 +12,16 @@
 		<div class="mt-20 text-3xl">
 			<ul class="ul-ident">
 				<li>
-					Explain opportunities for FIRST, internships, etc.
+					Expand opportunities for FIRST, internships, etc.
 				</li>
 				<li>
 					Exposure to GT
 					<ul class="ul-ident">
 						<li>
-							Have close ties with individuals who have access to many of GT’s shops and facilities
+							Develop close ties with individuals who have access to many of GT’s shops and facilities
 						</li>
 						<li>
-							Work with GT Alums who work in the industry
+							Work with GT Alums and industry professionals
 						</li>
 					</ul>
 				</li>
@@ -32,7 +32,7 @@
 		</div>
 	</div>
 </div>
-<div class="flex justify-center mt-20 text-2xl">
+<div class="flex justify-center mt-20 text-2xl jost">
 	Contact us<a class="mx-1.5" href="mailto:g28robotics@startproto.com">here</a> to join!
 </div>
 
