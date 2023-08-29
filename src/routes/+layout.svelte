@@ -37,7 +37,7 @@
     <div class="raleway navtext m-2 flex h-40 justify-self-end tracking-tight">
         {#if !mobile}
             <a href="/">
-                <img class="h-20" src="/logo.svg" alt="" />
+                <img class="h-20" src="/logo.png" alt="" />
             </a>
         {/if}
         <div class="ht-20 p-5">

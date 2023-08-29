@@ -14,7 +14,7 @@
 <div class="absolute flex justify-center align-middle text-center w-screen mt-[35vh] z-10">
     <div class="justify-center align-middle text-center">
         <div class="jost title tracking-tight">
-            G-28 Robotics
+            G28 Robotics
         </div>
         <div class="raleway frclabel float-right mr-2">
             FRC 202400169
