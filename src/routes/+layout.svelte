@@ -33,81 +33,61 @@
 	});
 </script>
 <div class="w-screen overflow-hidden">
-<div class="w-full z-50 absolute text-[#ffffff] overflow-hidden">
-    <div class="raleway navtext m-2 flex h-40 justify-self-end tracking-tight">
+<div class="w-full z-50 absolute overflow-hidden">
+    <div class="navtext m-2 flex h-40 justify-self-end tracking-tight garet">
         {#if !mobile}
             <a href="/">
-                <!-- <img class="h-50" src="/logo.png" alt="" /> -->
+                <img class="w-16" src="/g28mill.png" alt="" />
+                <img class="w-16" src="/logo_vertical.png" alt="" />
             </a>
         {/if}
-        <div class="ht-20 p-5">
-            {#if $page.url.pathname === '/' ? 'page' : undefined}
-                <a href="/" class="text-slate-[#D7D6D6] mr-4">
-                    about
-                </a>
-            {:else}
-                <a href="/" class="text-slate-100 mr-4">
-                    about
-                </a>
-            {/if}
-            {#if $page.url.pathname === '/join' ? 'page' : undefined}
-                <a href="/join" class="text-slate-[#D7D6D6] mr-4">
-                    join
-                </a>
-            {:else}
-                <a href="/join" class="text-slate-100 mr-4">
-                    join
-                </a>
-            {/if}
-            {#if $page.url.pathname === '/shop' ? 'page' : undefined}
-                <a href="/shop" class="text-slate-[#D7D6D6] mr-4">
-                    our shop
-                </a>
-            {:else}
-                <a href="/shop" class="text-slate-100 mr-4">
-                    our shop
-                </a>
-            {/if}
-            {#if $page.url.pathname === '/sponsors' ? 'page' : undefined}
-                <a href="/sponsors" class="text-slate-[#D7D6D6] mr-4">
-                    sponsors
-                </a>
-            {:else}
-                <a href="/sponsors" class="text-slate-100 mr-4">
-                    sponsors
-                </a>
-            {/if}
+        <div class="ht-20 p-5 ml-5">
+            <a href="/" class={$page.url.pathname === '/' ? "text-slate-500 mr-4": "text-black mr-4"}>
+                home
+            </a>
+            <a href="/about" class={$page.url.pathname === '/about' ? "text-slate-500 mr-4": "text-black mr-4"}>
+                about
+            </a>
+            <a href="/connect" class={$page.url.pathname === '/connect' ? "text-slate-500 mr-4": "text-black mr-4"}>
+                connect
+            </a>
+            <a href="/sponsors" class={$page.url.pathname === '/sponsors' ? "text-slate-500 mr-4": "text-black mr-4"}>
+                sponsors
+            </a>
         </div>
     </div>
     <slot />
 </div>
 </div>
-<canvas id="gradient" class="w-[100vw] h-[100vh] fixed overflow-hidden">
-</canvas>
+<div class="w-[100vw] h-[100vh] fixed z-10">
+<div class="w-[90vw] h-[90vh] mx-[5vw] my-[5vh] fixed opacity-15 z-20 rounded-lg overflow-hidden" />
+    <canvas id="gradient" class="w-[90vw] h-[90vh] mx-[5vw] my-[10vh] fixed overflow-hidden rounded-[10%/20%]">
+    </canvas>
+</div>
 
 <style global>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/garet');
 
-.raleway {
-	font-family: 'Raleway', sans-serif;
+.garet {
+	font-family: 'Garet', sans-serif;
 }
 .jost {
 	font-family: 'Jost', sans-serif;
 }
 
-.navtext {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-}
-
 #gradient {
-  width:100%;
-  height:100%;
+  width:90%;
+  height:80%;
+    opacity: 70%;
   --gradient-color-1: #714098;
   --gradient-color-2: #8c8ca9;
   --gradient-color-3: #363636;
   --gradient-color-4: #575b64;
+}
+
+.navtext {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
 }
 
 @media (max-width: 800px) {
