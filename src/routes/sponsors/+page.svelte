@@ -1,29 +1,43 @@
-<div class="mt-20" />
-<main class="flex justify-center mt-20">
-	<div class="mobile-name jost">
-		Thanks to our Sponsors!
+<script lang="ts">
+    import { ismobile } from "../../store";
+</script>
+
+<div class={"align-middle justify-center mx-[3vw] bg-[#d9d9d9] p-14 " + ($ismobile ? "rounded-[25%/23%]" : "rounded-[12%/25%]")}>
+	<div class="flex justify-center">
+		<div class="text-5xl antionio">our sponsors</div>
 	</div>
-</main>
-<div class="flex justify-center mt-20">
-	<div class="mx-[5%] max-w-5xl">
-		<div class="flex flex-wrap justify-center mt-20">
-			<img class="w-2/3" src="/startproto.svg" alt="" />
-			<img class="w-2/3" src="/siroco.png" alt="" />
-			<img class="w-1/3" src="/cloudq.png" alt="" />
+	<div>
+		<div class="flex justify-center mt-20">
+			<div class="mx-[5%] max-w-5xl">
+				<div class="flex flex-wrap justify-center mt-20">
+					<img class="w-2/3" src="/startproto.svg" alt="" />
+					<img class="w-2/3" src="/siroco.png" alt="" />
+					<img class="w-1/3" src="/cloudq.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="flex justify-center mt-10">
+			<div class="flex flex-wrap">
+				<div class="flex flex-wrap">
+					<div class="flex justify-center m-2 max-w-sm rounded-lg bg-white px-5">
+						<img class="m-5" src="/gra.jpg" alt="" />
+					</div>
+					<div class="max-w-md mt-3">
+						<div class="garet italic text-xl font-bold">
+							Thank you for your support of G28 Robotics!
+						</div>
+						<div class="text-lg max-w-5xl">
+							G28 Robotics is a member of the Georgia Robotics Alliance, a
+							non-profit in the state of Georgia and a 502(c)3 organization.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex justify-center min-w-xl">
+			<div class="bg-[#baa4e7] w-8/12 rounded-full text-3xl text-[#b9b9b9] text-center">
+				<a href="mailto:g28robotics@gmail.com">sponsor us</a>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="flex justify-center mt-20 jost">
-	<div class="mt-20 text-3xl max-w-5xl text-center">
-		G28 Robotics is a member of the Georgia Robotics Alliance
-		<br />
-		<div class="flex justify-center m-4">
-			<img class="h-32" src="/gra.jpg" alt="" />
-		</div>
-		<br />
-		Sponsoring us will allow you to gain exposure to an enviorment with over 630k students interested in engineering while also encouraging students to become better engineers.
-	</div>
-</div>
-<div class="flex justify-center mt-20 text-2xl jost">
-	Contact us<a class="mx-1.5" href="mailto:g28robotics@startproto.com">here</a> to sponsor!
 </div>
