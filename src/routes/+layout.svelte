@@ -83,7 +83,9 @@
                 </a>
             </div>
         </div>
-        <slot />
+        <div class="-translate-y-[5vh]">
+            <slot />
+        </div>
     </div>
 </div>
 

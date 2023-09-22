@@ -3,7 +3,7 @@
     let window: any;
 </script>
 
-<div class={"flex align-middle justify-center mx-[3vw] bg-[#d9d9d9] flex-wrap p-14 " + ($ismobile ? "rounded-[25%/8%]" : "rounded-[12%/25%]")}>
+<div class={"flex align-middle justify-center mx-[7vw] bg-[#d9d9d9] flex-wrap p-14 " + ($ismobile ? "rounded-[25%/8%]" : "rounded-[12%/25%]")}>
     <div class="m-5">
         <div class="flex justify-center align-middle antionio">
             <div class="text-5xl font-bold">about our team</div>
@@ -80,7 +80,7 @@
             of becoming science and technology heroes…” -Dean Kamen (Founder of FIRST).
         </div>
     </div>
-    <div class="bg-[#baa4e7] w-2/3 rounded-full text-2xl text-[#b9b9b9] text-center">
+    <div class="bg-[#baa4e7] max-w-[300px] w-[100%] rounded-full text-2xl visited:text-slate-50 text-slate-50 text-slate-50 text-center">
         <a href="https://www.firstinspires.org/robotics/frc"> learn more </a>
     </div>
 </div>

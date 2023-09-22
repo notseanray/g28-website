@@ -2,7 +2,7 @@
     import { ismobile } from "../../store";
 </script>
 
-<div class={"align-middle justify-center mx-[3vw] bg-[#d9d9d9] p-14 " + ($ismobile ? "rounded-[25%/23%]" : "rounded-[12%/25%]")}>
+<div class={"align-middle justify-center mx-[7vw] bg-[#d9d9d9] p-14 " + ($ismobile ? "rounded-[25%/23%]" : "rounded-[12%/25%]")}>
 	<div class="flex justify-center">
 		<div class="text-5xl antionio">our sponsors</div>
 	</div>
@@ -34,9 +34,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex justify-center min-w-xl">
-			<div class="bg-[#baa4e7] w-8/12 rounded-full text-3xl text-[#b9b9b9] text-center">
+		<div class="flex justify-center min-w-xl m-3">
+			<div class="bg-[#baa4e7] max-w-[300px] w-[100%] rounded-full text-3xl text-[#f5f6f7] text-center">
 				<a href="mailto:g28robotics@gmail.com">sponsor us</a>
+			</div>
+		</div>
+		<div class="flex justify-center min-w-xl m-3">
+			<div class="bg-[#baa4e7] max-w-[300px] w-[100%] rounded-full text-3xl text-[#f5f6f7] text-center">
+				<a href="/g28_packet.pdf" target="_blank">sponsor information</a>
 			</div>
 		</div>
 	</div>

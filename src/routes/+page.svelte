@@ -11,9 +11,9 @@
 </script>
 
 {#if !mobile}
-    <div class="flex align-middle justify-center mx-[5vw] rounded-[12%/25%] bg-[#d9d9d9]">
+    <div class="flex align-middle justify-center mx-[7vw] rounded-[12%/25%] bg-[#d9d9d9]">
         <img
-            class="justify-center align-middle w-[90vw]"
+            class="justify-center align-middle w-[86vw]"
             src="/g28mainpage.png"
             alt=""
         />
