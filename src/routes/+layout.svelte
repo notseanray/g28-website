@@ -1,7 +1,5 @@
 <script lang="ts">
     import "../app.css";
-    import { onMount } from "svelte";
-    import { Gradient } from "../Gradient";
     // Call `initGradient` with the selector to your canvas
     import { ismobile } from "../store";
     import { browser } from "$app/environment";
@@ -83,8 +81,10 @@
                 </a>
             </div>
         </div>
-        <div class="-translate-y-[5vh]">
-            <slot />
+        <div class="flex align-middle justify-center mx-[7vw] mb-10">
+            <div class="max-w-[1500px] w-[80%] min-w-[200px]">
+                <slot />
+            </div>
         </div>
     </div>
 </div>
@@ -123,7 +123,7 @@
 
     @media (max-width: 800px) {
         .navtext {
-            font-size: 1rem;
+            font-size: 1.5rem;
             line-height: 1rem;
         }
     }
