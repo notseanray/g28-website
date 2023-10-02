@@ -50,32 +50,32 @@
                 <a
                     href="/"
                     class={$page.url.pathname === "/"
-                        ? "text-slate-500 mr-4"
-                        : "text-black mr-4"}
+                        ? "text-slate-500 mr-3"
+                        : "text-black mr-3"}
                 >
                     home
                 </a>
                 <a
                     href="/about"
                     class={$page.url.pathname === "/about"
-                        ? "text-slate-500 mr-4"
-                        : "text-black mr-4"}
+                        ? "text-slate-500 mr-3"
+                        : "text-black mr-3"}
                 >
                     about
                 </a>
                 <a
                     href="/connect"
                     class={$page.url.pathname === "/connect"
-                        ? "text-slate-500 mr-4"
-                        : "text-black mr-4"}
+                        ? "text-slate-500 mr-3"
+                        : "text-black mr-3"}
                 >
                     connect
                 </a>
                 <a
                     href="/sponsors"
                     class={$page.url.pathname === "/sponsors"
-                        ? "text-slate-500 mr-4"
-                        : "text-black mr-4"}
+                        ? "text-slate-500 mr-3"
+                        : "text-black mr-3"}
                 >
                     sponsors
                 </a>
@@ -123,7 +123,7 @@
 
     @media (max-width: 800px) {
         .navtext {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             line-height: 1rem;
         }
     }
