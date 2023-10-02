@@ -46,36 +46,36 @@
                     <img class="w-16 z-50" src="/logo_vertical.png" alt="" />
                 </a>
             {/if}
-            <div class="ht-20 p-5 ml-5">
+            <div class="ht-20 p-5 ml-4">
                 <a
                     href="/"
                     class={$page.url.pathname === "/"
-                        ? "text-slate-500 mr-3"
-                        : "text-black mr-3"}
+                        ? "text-slate-500 mr-2"
+                        : "text-black mr-2"}
                 >
                     home
                 </a>
                 <a
                     href="/about"
                     class={$page.url.pathname === "/about"
-                        ? "text-slate-500 mr-3"
-                        : "text-black mr-3"}
+                        ? "text-slate-500 mr-2"
+                        : "text-black mr-2"}
                 >
                     about
                 </a>
                 <a
                     href="/connect"
                     class={$page.url.pathname === "/connect"
-                        ? "text-slate-500 mr-3"
-                        : "text-black mr-3"}
+                        ? "text-slate-500 mr-2"
+                        : "text-black mr-2"}
                 >
                     connect
                 </a>
                 <a
                     href="/sponsors"
                     class={$page.url.pathname === "/sponsors"
-                        ? "text-slate-500 mr-3"
-                        : "text-black mr-3"}
+                        ? "text-slate-500 mr-2"
+                        : "text-black mr-2"}
                 >
                     sponsors
                 </a>
