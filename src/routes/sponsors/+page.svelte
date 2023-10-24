@@ -8,9 +8,11 @@
 	<div class="flex justify-center mt-20">
 		<div class="mx-[5%] max-w-5xl">
 			<div class="flex flex-wrap justify-center mt-20">
-				<img class="w-2/3" src="/startproto.svg" alt="" />
-				<img class="w-2/3" src="/siroco.png" alt="" />
-				<img class="w-1/3" src="/cloudq.png" alt="" />
+				<img class="w-2/3 m-5" src="/startproto.svg" alt="" />
+				<img class="w-1/3 m-5" src="/lm-logo.svg" alt="" />
+				<img class="w-1/3 m-5" src="/argosy.png" alt="" />
+				<!-- <img class="w-2/3" src="/siroco.png" alt="" /> -->
+				<!-- <img class="w-1/3" src="/cloudq.png" alt="" /> -->
 			</div>
 		</div>
 	</div>

@@ -42,8 +42,7 @@
         >
             {#if !mobile}
                 <a href="/">
-                    <img class="w-16 z-50" src="/g28mill.png" alt="" />
-                    <img class="w-16 z-50" src="/logo_vertical.png" alt="" />
+                    <img class="w-32 z-50 mt-4" src="/logo.png" alt="" />
                 </a>
             {/if}
             <div class="ht-20 p-5 ml-4">
