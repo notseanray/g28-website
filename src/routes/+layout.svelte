@@ -55,16 +55,8 @@
                     home
                 </a>
                 <a
-                    href="/about"
-                    class={$page.url.pathname === "/about"
-                        ? "text-slate-500 mr-2"
-                        : "text-black mr-2"}
-                >
-                    about
-                </a>
-                <a
-                    href="/connect"
-                    class={$page.url.pathname === "/connect"
+                    href="/contact"
+                    class={$page.url.pathname === "/contact"
                         ? "text-slate-500 mr-2"
                         : "text-black mr-2"}
                 >
