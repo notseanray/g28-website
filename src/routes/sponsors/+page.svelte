@@ -34,8 +34,17 @@
 						alt=""
 					/>
 				</div>
+				<div class="w-3/6 m-5">
+					<img class="w-full m-5" src="/USPower.png" alt="" />
+				</div>
+				<div class="w-1/6 m-5">
+					<img class="w-full m-5" src="/biren-patel.png" alt="" />
+				</div>
 				<div class="w-1/6 m-5">
 					<img class="w-full m-5" src="/farmburger.png" alt="" />
+				</div>
+				<div class="w-3/6 m-5">
+					<img class="w-full m-5 p-5 bg-white rounded-lg" src="/aubrey.png" alt="" />
 				</div>
 				<!-- <img class="w-2/3" src="/siroco.png" alt="" /> -->
 				<!-- <img class="w-1/3" src="/cloudq.png" alt="" /> -->
